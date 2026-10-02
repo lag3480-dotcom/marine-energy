@@ -1,0 +1,10 @@
+# slug|위키 문서 후보(쉼표 구분, ko: 또는 en: 접두)
+shinsegae|ko:신세계백화점,en:Shinsegae,ko:신세계 (기업)
+lotte-dept|ko:롯데백화점,en:Lotte_Department_Store
+lotte-outlet|ko:롯데아울렛,ko:롯데쇼핑,en:Lotte_Shopping
+premium-outlet|ko:신세계사이먼,ko:신세계 프리미엄 아울렛,en:Shinsegae_Simon
+vips|ko:빕스,en:VIPS_(restaurant)
+bonjuk|ko:본죽,ko:본아이에프,en:Bonjuk
+shinhwa|ko:제주신화월드,en:Jeju_Shinhwa_World,ko:람정제주개발
+renault|ko:르노코리아,en:Renault_Korea,en:Renault_Samsung_Motors
+hanwha-aero|ko:한화에어로스페이스,en:Hanwha_Aerospace
