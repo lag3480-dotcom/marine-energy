@@ -69,6 +69,18 @@ section{padding-block:56px}
 .sec-head{display:flex;flex-direction:column;gap:10px;margin-bottom:28px;max-width:40em}
 .sec-head p{margin:0;color:var(--steel)}
 
+/* 실적 */
+.refs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.refs .big{background:var(--ink);color:#fff;border-radius:4px;padding:22px;display:flex;flex-direction:column;gap:6px;border-bottom:6px solid var(--pipe)}
+.refs .big b{font:400 clamp(1.3rem,3.4vw,1.7rem)/1.25 var(--display)}
+.refs .big span{color:#d3dae0}
+.ref-group{background:var(--plate);border:1px solid var(--line);border-radius:4px;padding:20px 22px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.ref-group h3{font:500 .78rem/1 var(--mono);letter-spacing:.1em;color:var(--steel);margin-top:6px}
+.ref-group ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column}
+.ref-group li{padding-block:8px;border-bottom:1px solid var(--line)}
+.ref-group li:last-child{border-bottom:0}
+@media (max-width:640px){.refs{grid-template-columns:1fr}}
+
 /* 서비스 */
 .svc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .svc article{background:var(--plate);border:1px solid var(--line);border-radius:4px;padding:22px;display:flex;flex-direction:column;gap:8px}
@@ -196,6 +208,41 @@ footer a{color:#d3dae0}
   </div>
 </div>
 
+<section id="refs">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">시공 실적</span>
+      <h2>부산 백화점·아울렛 식당가를 시공한 업체입니다</h2>
+      <p>대형 매장의 까다로운 일정과 검사 기준을 맞춰온 경험으로 사장님 매장도 시공합니다.</p>
+    </div>
+    <div class="refs">
+      <article class="big"><b>동부산 롯데아울렛</b><span>오픈 당시 3층 식당가 매장의 90% 시공</span></article>
+      <article class="big"><b>본죽 부산·경남 매장</b><span>브랜드 전속 시공</span></article>
+      <div class="ref-group">
+        <h3>백화점·아울렛</h3>
+        <ul>
+          <li><b>신세계 센텀시티</b> 입점 매장 다수</li>
+          <li><b>롯데백화점</b> 부산본점·광복점·센텀시티점 입점 매장 다수</li>
+          <li><b>부산 프리미엄 아울렛</b> 3층 푸드코트 전체 시공</li>
+          <li><b>제주 신화월드</b> 푸드코트 매장 전체 시공</li>
+        </ul>
+      </div>
+      <div class="ref-group">
+        <h3>프랜차이즈 외식</h3>
+        <ul>
+          <li><b>빕스(VIPS)</b> 서면점, 광복롯데점, 용호W점, 대구 등</li>
+          <li><b>본죽</b> 부산·경남 매장 전속</li>
+        </ul>
+        <h3>공장·구내식당</h3>
+        <ul>
+          <li><b>르노삼성(현 르노코리아) 공장</b> 가스배관</li>
+          <li><b>한화에어로스페이스 창원</b> 3개 공장 구내식당</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="service">
   <div class="wrap">
     <div class="sec-head">
@@ -264,23 +311,8 @@ footer a{color:#d3dae0}
     <div class="facts">
       <div><b>등록업체</b><span>가스시설시공업 __LICENSE__</span></div>
       <div><b>직접 시공</b><span>하도급 없이 대표가 현장 시공</span></div>
-      <div><b>4개 지역</b><span>부산 · 경남 · 대구 · 경북</span></div>
+      <div><b>대형 현장</b><span>백화점·아울렛 식당가, 공장 구내식당</span></div>
       <div><b>영업용 전문</b><span>식당·카페·주점 주방 가스</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="work">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">시공 사례</span>
-      <h2>최근 현장</h2>
-      <p>시공 사례는 <a href="blog/">현장 기록</a>에서 더 보실 수 있습니다.</p>
-    </div>
-    <div class="gallery">
-      <figure><div class="ph">현장 사진 1<br>(사진 받는 대로 교체)</div><figcaption>부산 신규 오픈 식당 배관</figcaption></figure>
-      <figure><div class="ph">현장 사진 2</div><figcaption>화구 추가 연결</figcaption></figure>
-      <figure><div class="ph">현장 사진 3</div><figcaption>주방 기구 이전</figcaption></figure>
     </div>
   </div>
 </section>

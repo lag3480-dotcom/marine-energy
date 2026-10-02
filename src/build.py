@@ -12,7 +12,7 @@ head = f"""<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 {title}
-<meta name="description" content="부산·경남 식당·업소용 가스공사. 신규 오픈 매장 가스배관, 업소용 가스레인지 설치·교체, 기구 추가·이전. 가정집 이사 도시가스 연결은 하지 않습니다. 가스시설시공업 등록업체 마린에너지 {cfg['PHONE']}">
+<meta name="description" content="부산·경남 식당·업소용 가스공사. 신규 오픈 매장 가스배관, 업소용 가스레인지 설치·교체, 기구 추가·이전. 가정집 이사 도시가스 연결은 하지 않습니다. 롯데·신세계 식당가 시공 실적 마린에너지 {cfg['PHONE']}">
 <link rel="canonical" href="{cfg['SITE_URL']}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="마린에너지 | 부산 식당 가스공사">
