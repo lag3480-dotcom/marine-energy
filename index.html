@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>마린에너지 가스시설공사</title>
+<meta name="description" content="부산·경남 식당·업소용 가스공사. 신규 오픈 매장 가스배관, 업소용 가스레인지 설치·교체, 기구 추가·이전. 가정집 이사 도시가스 연결은 하지 않습니다. 가스시설시공업 등록업체 마린에너지 010-5364-6186">
+<link rel="canonical" href="https://example.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="마린에너지 | 부산 식당 가스공사">
+<meta property="og:description" content="식당·업소 전용 가스시설 공사. 부산·경남.">
+<meta property="og:url" content="https://example.com/">
+<!-- NAVER_VERIFY: 네이버 서치어드바이저 소유확인 메타태그 자리 -->
+<!-- NAVER_WCS: 네이버 광고 공통 스크립트 자리 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: 한 줄로 흐르는 노란 가스배관이 페이지를 관통하고, 각 섹션은 배관에 붙은 표지처럼 놓인다. 모바일 하단엔 전화·카톡 고정 바. */
+:root{
+  --ink:#14202b;          /* 본문, 짙은 남색 */
+  --steel:#4a5966;        /* 보조 텍스트 */
+  --paper:#f6f7f5;        /* 배경 */
+  --plate:#ffffff;        /* 카드 면 */
+  --line:#d9ddd8;         /* 구분선 */
+  --pipe:#f5c400;         /* 가스배관 황색 */
+  --pipe-dark:#c99f00;
+  --signal:#d8381e;       /* 긴급, 강조 */
+  --display:"Black Han Sans","IBM Plex Sans KR",system-ui,sans-serif;
+  --body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 var(--body);word-break:keep-all;padding-bottom:76px}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{text-wrap:balance;margin:0}
+h2{font:400 clamp(1.6rem,4.2vw,2.3rem)/1.25 var(--display);letter-spacing:-.01em}
+.eyebrow{font:500 .78rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--steel)}
+:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+
+/* 상단 */
+.top{background:var(--ink);color:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:12px}
+.brand{font:400 1.25rem/1 var(--display);letter-spacing:.02em;text-decoration:none}
+.brand small{display:block;font:500 .7rem/1.4 var(--body);color:#b9c3cc;letter-spacing:0;margin-top:4px}
+.top-call{font:500 .95rem/1 var(--mono);text-decoration:none;color:var(--pipe);white-space:nowrap}
+
+/* 히어로 */
+.hero{background:var(--ink);color:#fff;padding-block:28px 0;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:end}
+.hero h1{font:400 clamp(2.1rem,6.4vw,3.8rem)/1.12 var(--display);letter-spacing:-.01em}
+.hero h1 em{font-style:normal;color:var(--pipe)}
+.hero p.lead{color:#d3dae0;font-size:1.08rem;max-width:34em;margin:18px 0 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;padding:0;list-style:none}
+.chips li{border:1px solid #3b4b59;border-radius:3px;padding:5px 10px;font-size:.88rem;color:#e6ebef}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:0 22px;border-radius:4px;font:700 1.05rem/1 var(--body);text-decoration:none;border:0;cursor:pointer}
+.btn-call{background:var(--pipe);color:var(--ink)}
+.btn-call:hover{background:#ffd31a}
+.btn-kakao{background:#fee500;color:#191600}
+.btn-ghost{background:transparent;color:#fff;border:1px solid #556676}
+.notice{margin:0 0 4px;background:#2a1a12;border:1px solid var(--signal);border-left:6px solid var(--signal);border-radius:3px;padding:10px 14px;font-size:.93rem;line-height:1.55;color:#f3dcd4}
+.notice b{color:#fff;margin-right:6px}
+.hero-card{background:#1d2c39;border:1px solid #2e3f4e;border-radius:4px;padding:18px 20px;margin-bottom:28px}
+.hero-card dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 16px;font-size:.95rem}
+.hero-card dt{color:#93a3b1;font:500 .8rem/1.6 var(--mono);letter-spacing:.06em}
+.hero-card dd{margin:0}
+
+/* 배관: 이 업종만의 디테일. 실제 가스배관은 황색으로 도색하고 흐름 방향을 표시한다. */
+.pipe{position:relative;height:30px;background:linear-gradient(var(--pipe) 0 0) center/100% 16px no-repeat;margin-top:8px}
+.pipe::before{content:"";position:absolute;inset:7px 0;border-top:2px solid #ffe26b;border-bottom:2px solid var(--pipe-dark);pointer-events:none}
+.pipe .tag{position:absolute;top:50%;transform:translateY(-50%);background:var(--pipe);color:var(--ink);font:500 .7rem/1 var(--mono);letter-spacing:.14em;padding:7px 10px;border:2px solid var(--ink);white-space:nowrap}
+.pipe .tag.a{left:6%}.pipe .tag.b{left:44%}.pipe .tag.c{right:6%}
+.flow{display:inline-block;animation:flow 1.6s linear infinite}
+@keyframes flow{0%{transform:translateX(-2px)}50%{transform:translateX(3px)}100%{transform:translateX(-2px)}}
+
+section{padding-block:56px}
+.sec-head{display:flex;flex-direction:column;gap:10px;margin-bottom:28px;max-width:40em}
+.sec-head p{margin:0;color:var(--steel)}
+
+/* 서비스 */
+.svc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.svc article{background:var(--plate);border:1px solid var(--line);border-radius:4px;padding:22px;display:flex;flex-direction:column;gap:8px}
+.svc article.main{grid-column:span 2;border-left:8px solid var(--pipe)}
+.svc h3{font:700 1.2rem/1.35 var(--body)}
+.svc p{margin:0;color:var(--steel)}
+.svc ul{margin:4px 0 0;padding-left:1.1em;color:var(--ink)}
+.svc .kw{font:500 .76rem/1 var(--mono);color:var(--steel);letter-spacing:.06em}
+
+/* 절차 */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border-top:4px solid var(--ink)}
+.steps li{padding:18px 16px 0 0;display:flex;flex-direction:column;gap:6px}
+.steps .n{font:500 .8rem/1 var(--mono);color:var(--steel)}
+.steps b{font-size:1.06rem}
+.steps span{color:var(--steel);font-size:.93rem}
+
+/* 신뢰 */
+.trust{background:var(--ink);color:#fff}
+.trust .sec-head p{color:#c3ccd4}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#2e3f4e;border:1px solid #2e3f4e}
+.facts div{background:var(--ink);padding:20px;display:flex;flex-direction:column;gap:6px}
+.facts b{font:400 1.5rem/1.2 var(--display);color:var(--pipe)}
+.facts span{color:#c3ccd4;font-size:.92rem}
+
+/* 사진 */
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.gallery figure{margin:0;background:var(--plate);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.gallery .ph{aspect-ratio:4/3;max-width:100%;background:repeating-linear-gradient(135deg,#eceee9 0 12px,#e3e6e0 12px 24px);display:grid;place-items:center;color:var(--steel);font:500 .8rem/1.4 var(--mono);text-align:center;padding:10px}
+.gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.gallery figcaption{padding:10px 12px;font-size:.9rem}
+
+/* 문의 */
+.ask{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.form{background:var(--plate);border:1px solid var(--line);border-top:6px solid var(--pipe);border-radius:4px;padding:22px;display:flex;flex-direction:column;gap:14px}
+.form label{display:flex;flex-direction:column;gap:6px;font-weight:500;font-size:.95rem}
+.form input,.form select,.form textarea{font:inherit;padding:12px;border:1px solid #bfc5bf;border-radius:3px;background:#fff;color:var(--ink);width:100%}
+.form textarea{min-height:90px;resize:vertical}
+.form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form .note{font-size:.85rem;color:var(--steel);margin:0}
+.form .btn{width:100%}
+.direct{display:flex;flex-direction:column;gap:14px}
+.direct .num{font:500 clamp(1.7rem,5vw,2.4rem)/1.1 var(--mono);letter-spacing:.02em;text-decoration:none}
+.direct .hours{color:var(--steel);margin:0}
+.copy{align-self:flex-start;background:none;border:1px solid var(--line);border-radius:3px;padding:6px 12px;font:inherit;font-size:.88rem;cursor:pointer;color:var(--ink)}
+#formMsg{margin:0;font-size:.9rem;color:var(--signal);min-height:1.2em}
+
+/* FAQ */
+.faq details{border-bottom:1px solid var(--line);padding-block:16px}
+.faq summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::after{content:"+";font:500 1.2rem/1 var(--mono);color:var(--steel)}
+.faq details[open] summary::after{content:"−"}
+.faq p{margin:10px 0 0;color:var(--steel);max-width:44em}
+
+/* 지역 */
+.areas{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.areas li{background:var(--plate);border:1px solid var(--line);border-radius:3px;padding:6px 12px;font-size:.92rem}
+.areas li.hq{background:var(--pipe);border-color:var(--pipe-dark);font-weight:700}
+
+footer{background:#0d161e;color:#9fadb9;font-size:.85rem;padding-block:28px}
+footer .wrap{display:flex;flex-direction:column;gap:6px}
+footer a{color:#d3dae0}
+
+/* 모바일 고정 바 */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:20;display:grid;grid-template-columns:1.4fr 1fr 1fr;background:var(--ink);padding:8px 8px calc(8px + env(safe-area-inset-bottom,0px));gap:8px;box-shadow:0 -4px 16px rgba(0,0,0,.18)}
+.dock a{min-height:52px;display:flex;align-items:center;justify-content:center;border-radius:4px;text-decoration:none;font-weight:700;font-size:1rem}
+.dock .d-call{background:var(--pipe);color:var(--ink)}
+.dock .d-kakao{background:#fee500;color:#191600}
+.dock .d-form{background:#2a3b4a;color:#fff}
+
+@media (min-width:900px){body{padding-bottom:0}.dock{display:none}}
+@media (max-width:860px){
+  .hero-grid,.ask{grid-template-columns:1fr}
+  .hero-card{margin-bottom:20px}
+  .steps{grid-template-columns:1fr;border-top:0;border-left:4px solid var(--ink)}
+  .steps li{padding:0 0 18px 16px}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pipe .tag.b{display:none}
+}
+@media (max-width:520px){
+  .svc{grid-template-columns:1fr}.svc article.main{grid-column:auto}
+  .cta .btn{flex:1 1 100%}
+  .form .row{grid-template-columns:1fr}
+  .top-call{display:none}
+}
+</style>
+</head>
+<body>
+
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">마린에너지<small>업장 가스시설 시공 · 부산</small></a>
+    <a class="top-call" href="tel:01053646186" data-track="call_top">☎ 010-5364-6186</a>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="notice"><b>식당·상가·공장 등 업장 전용</b> 가정집 이사·전입 도시가스 연결(개통)은 하지 않습니다. 이사 연결은 이용 중인 도시가스 회사 고객센터로 문의해 주세요.</p>
+      <p class="eyebrow" style="color:#93a3b1;margin-top:18px">부산 · 경남 식당·업소용 가스시설 시공</p>
+      <h1 style="margin-top:12px">식당 오픈 날짜에 맞춰<br><em>가스공사부터</em> 끝내드립니다</h1>
+      <p class="lead">신규 매장 가스배관, 업소용 가스레인지·간택기 설치와 교체, 기구 추가·이전까지. 현장 실측 후 견적을 드리고, 시공 뒤 완성검사까지 챙깁니다.</p>
+      <ul class="chips">
+        <li>신규 오픈 시공</li><li>업소용 가스레인지 설치·교체</li><li>기구 추가·이전</li><li>LPG·도시가스</li><li>산업용·관공서</li>
+      </ul>
+      <div class="cta">
+        <a class="btn btn-call" href="tel:01053646186" data-track="call_hero">전화 상담 010-5364-6186</a>
+        <a class="btn btn-kakao" href="sms:01053646186" data-track="sms_hero">문자 상담</a>
+        <a class="btn btn-ghost" href="#ask">견적 문의 남기기</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <dl>
+        <dt>상담</dt><dd>전화·문자 바로 연결, 현장 사진 보내주시면 대략 견적 안내</dd>
+        <dt>실측</dt><dd>부산 시내 현장 방문 실측</dd>
+        <dt>시공</dt><dd>영업 일정에 맞춘 공사 일정 조율</dd>
+        <dt>검사</dt><dd>시공 후 완성검사까지 대응</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="pipe" aria-hidden="true">
+    <span class="tag a">GAS <span class="flow">▶</span></span>
+    <span class="tag b">도시가스 · LPG</span>
+    <span class="tag c">GAS <span class="flow">▶</span></span>
+  </div>
+</div>
+
+<section id="service">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">시공 분야</span>
+      <h2>사장님 매장에 필요한 가스공사</h2>
+      <p>식당, 카페, 주점, 프랜차이즈 매장의 주방 가스시설을 주로 시공합니다.</p>
+    </div>
+    <div class="svc">
+      <article class="main">
+        <span class="kw">NEW STORE</span>
+        <h3>신규 오픈 매장 가스시설 시공</h3>
+        <p>인테리어 일정에 맞춰 배관을 깔고, 화구·튀김기·그릴 등 주방기구 연결까지 한 번에 진행합니다.</p>
+        <ul>
+          <li>주방 도면이나 사진만으로 1차 상담</li>
+          <li>인테리어·주방설비 업체와 일정 맞춤</li>
+          <li>도시가스·LPG 모두 시공</li>
+        </ul>
+      </article>
+      <article>
+        <span class="kw">ADD</span>
+        <h3>업소용 가스레인지 설치·교체, 기구 추가</h3>
+        <p>간택기, 낮은 레인지, 튀김기 교체나 추가 설치. 메뉴가 늘어 화구를 더 놓아야 할 때 배관을 분기해 연결합니다.</p>
+      </article>
+      <article>
+        <span class="kw">MOVE</span>
+        <h3>기구·배관 이전 공사</h3>
+        <p>주방 배치를 바꾸거나 매장을 옮길 때 기존 배관을 정리하고 새 위치로 옮깁니다.</p>
+      </article>
+      <article>
+        <span class="kw">INDUSTRIAL</span>
+        <h3>산업용 가스시설</h3>
+        <p>공장, 작업장의 가스 사용시설 배관 공사를 맡습니다.</p>
+      </article>
+      <article>
+        <span class="kw">PUBLIC</span>
+        <h3>관공서 공사</h3>
+        <p>학교 급식실, 공공기관 시설의 가스 공사를 수행합니다.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="process" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">진행 순서</span>
+      <h2>문의부터 검사까지</h2>
+    </div>
+    <ol class="steps">
+      <li><span class="n">01</span><b>상담</b><span>전화나 문자로 매장 위치와 필요한 기구를 알려주세요.</span></li>
+      <li><span class="n">02</span><b>현장 실측</b><span>방문해서 배관 경로와 기구 위치를 확인합니다.</span></li>
+      <li><span class="n">03</span><b>견적</b><span>항목별로 정리한 견적서를 드립니다.</span></li>
+      <li><span class="n">04</span><b>시공</b><span>오픈·영업 일정에 맞춰 공사합니다.</span></li>
+      <li><span class="n">05</span><b>검사·사용</b><span>완성검사를 받고 사용 방법을 안내합니다.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="trust" id="trust">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" style="color:#93a3b1">믿고 맡기실 수 있도록</span>
+      <h2>면허 있는 시공업체가 직접 공사합니다</h2>
+      <p>가스시설시공업 등록 업체로, 대표가 현장에 직접 나갑니다.</p>
+    </div>
+    <div class="facts">
+      <div><b>등록업체</b><span>가스시설시공업 (등록번호)</span></div>
+      <div><b>직접 시공</b><span>하도급 없이 대표가 현장 시공</span></div>
+      <div><b>4개 지역</b><span>부산 · 경남 · 대구 · 경북</span></div>
+      <div><b>영업용 전문</b><span>식당·카페·주점 주방 가스</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">시공 사례</span>
+      <h2>최근 현장</h2>
+      <p>시공 사례는 <a href="blog/">현장 기록</a>에서 더 보실 수 있습니다.</p>
+    </div>
+    <div class="gallery">
+      <figure><div class="ph">현장 사진 1<br>(사진 받는 대로 교체)</div><figcaption>부산 신규 오픈 식당 배관</figcaption></figure>
+      <figure><div class="ph">현장 사진 2</div><figcaption>화구 추가 연결</figcaption></figure>
+      <figure><div class="ph">현장 사진 3</div><figcaption>주방 기구 이전</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="ask" style="padding-top:0">
+  <div class="wrap ask">
+    <div class="direct">
+      <span class="eyebrow">바로 연락</span>
+      <h2>공사 날짜가 정해졌다면 지금 전화 주세요</h2>
+      <a class="num" href="tel:01053646186" data-track="call_ask">010-5364-6186</a>
+      <button class="copy" type="button" id="copyBtn">번호 복사</button>
+      <p class="hours">현장 작업 중에는 통화가 어려울 수 있어요. 문자를 남겨주시면 작업 끝나는 대로 연락드립니다.</p>
+      <a class="btn btn-kakao" href="sms:01053646186" data-track="sms_ask" style="align-self:flex-start">문자로 현장 사진 보내기</a>
+    </div>
+    <form class="form" id="askForm" novalidate>
+      <span class="eyebrow">견적 문의</span>
+      <div class="row">
+        <label for="f-name">성함·상호<input id="f-name" name="name" autocomplete="name" placeholder="예: 김사장 / 해운대 OO식당"></label>
+        <label for="f-phone">연락처<input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="010-" required></label>
+      </div>
+      <div class="row">
+        <label for="f-area">지역
+          <select id="f-area" name="area">
+            <option>부산</option><option>경남</option><option>대구</option><option>경북</option><option>기타</option>
+          </select>
+        </label>
+        <label for="f-type">공사 종류
+          <select id="f-type" name="type">
+            <option>신규 오픈 시공</option><option>가스기구 추가</option><option>기구·배관 이전</option><option>산업용</option><option>기타</option>
+          </select>
+        </label>
+      </div>
+      <label for="f-memo">내용 (선택)<textarea id="f-memo" name="memo" placeholder="예: 다음 달 15일 오픈, 화구 3개 + 튀김기 1대"></textarea></label>
+      <p id="formMsg" role="status"></p>
+      <button class="btn btn-call" type="submit">문자로 문의 보내기</button>
+      <p class="note">버튼을 누르면 휴대폰 문자 앱이 열리고, 적어주신 내용이 채워집니다. 전송만 누르시면 됩니다.</p>
+    </form>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">자주 묻는 질문</span>
+      <h2>공사 전에 많이 물어보시는 것</h2>
+    </div>
+    <div class="faq">
+      <details open><summary>이사 왔는데 집 도시가스 연결도 해주시나요?</summary><p>아니요. 가정집 이사·전입 시 도시가스 개통은 해당 지역 도시가스 회사(부산은 부산도시가스 등) 고객센터에서 접수합니다. 마린에너지는 식당·상가·공장 같은 업장의 가스배관과 기구 설치 공사만 합니다.</p></details>
+      <details><summary>견적은 어떻게 받나요?</summary><p>매장 위치와 설치할 기구를 알려주시면 대략적인 범위를 먼저 안내드리고, 현장 실측 후 정확한 견적서를 드립니다. 주방 사진을 문자로 보내주시면 상담이 빨라집니다.</p></details>
+      <details><summary>공사는 며칠 걸리나요?</summary><p>매장 규모와 배관 길이에 따라 다릅니다. 일반적인 식당 주방은 실측 때 공사 기간을 함께 안내드리고, 오픈 날짜에 맞춰 일정을 잡습니다.</p></details>
+      <details><summary>영업 중인 매장도 공사할 수 있나요?</summary><p>가능합니다. 기구 추가나 이전 공사는 휴무일이나 영업 전 시간에 맞춰 진행할 수 있습니다.</p></details>
+      <details><summary>도시가스와 LPG 둘 다 되나요?</summary><p>네. 도시가스 매장과 LPG 매장 모두 시공합니다. 어떤 가스를 쓰는지 모르셔도 현장에서 확인해 드립니다.</p></details>
+      <details><summary>시공 후 검사는 따로 신청해야 하나요?</summary><p>따로 신경 쓰지 않으셔도 됩니다. 시공 후 필요한 완성검사 절차까지 저희가 챙깁니다.</p></details>
+      <details><summary>부산 외 지역도 오시나요?</summary><p>김해·양산·창원 등 경남 전역을 시공하고, 대구·경북도 상담 후 진행합니다.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="area" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">시공 지역</span>
+      <h2>부산·경남 중심, 대구·경북 상담 가능</h2>
+    </div>
+    <ul class="areas">
+      <li class="hq">부산 전 지역</li><li>김해</li><li>양산</li><li>창원</li><li>진주</li><li>거제</li><li>대구</li><li>경산</li><li>포항</li><li>경주</li><li>구미</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong style="color:#fff">마린에너지</strong>
+    <span>대표 (대표자명) · 사업자등록번호 (사업자등록번호) · 가스시설시공업 (등록번호)</span>
+    <span>부산광역시 (주소) · 전화 010-5364-6186</span>
+    <span><a href="blog/">현장 기록</a></span>
+  </div>
+</footer>
+
+<nav class="dock" aria-label="빠른 연락">
+  <a class="d-call" href="tel:01053646186" data-track="call_dock">☎ 전화 상담</a>
+  <a class="d-kakao" href="sms:01053646186" data-track="sms_dock">문자</a>
+  <a class="d-form" href="#ask">문의</a>
+</nav>
+
+<script>
+(function(){
+  var PHONE = "01053646186";
+  // 네이버 광고 전환 추적: 공통 스크립트가 붙으면 전화·카톡 클릭을 전환으로 보낸다.
+  function track(kind){
+    try{ if(window.wcs && window._nasa!==undefined){ window._nasa["cnv"]=wcs.cnv("4","1"); wcs_do(window._nasa); } }catch(e){}
+    try{ if(window.gtag){ gtag("event","contact",{method:kind}); } }catch(e){}
+  }
+  document.querySelectorAll("[data-track]").forEach(function(a){
+    a.addEventListener("click",function(){ track(a.getAttribute("data-track")); });
+  });
+
+  var copyBtn=document.getElementById("copyBtn");
+  copyBtn.addEventListener("click",function(){
+    var done=function(){ copyBtn.textContent="복사했어요"; setTimeout(function(){copyBtn.textContent="번호 복사";},1800); };
+    if(navigator.clipboard){ navigator.clipboard.writeText(PHONE).then(done,function(){ copyBtn.textContent=PHONE; }); }
+    else { copyBtn.textContent=PHONE; }
+  });
+
+  var form=document.getElementById("askForm"), msg=document.getElementById("formMsg");
+  form.addEventListener("submit",function(e){
+    e.preventDefault();
+    var v=function(n){return (form.elements[n].value||"").trim();};
+    var phone=v("phone");
+    if(phone.replace(/\D/g,"").length<9){ msg.textContent="연락받으실 번호를 적어주세요."; form.elements.phone.focus(); return; }
+    msg.textContent="";
+    var body="[홈페이지 문의] "+v("type")+" / "+v("area")+"\n"+(v("name")?v("name")+"\n":"")+"연락처 "+phone+(v("memo")?"\n"+v("memo"):"");
+    track("form_sms");
+    var ios=/iPhone|iPad|iPod/.test(navigator.userAgent);
+    location.href="sms:"+PHONE+(ios?"&":"?")+"body="+encodeURIComponent(body);
+    msg.textContent="문자 앱이 열리지 않으면 "+PHONE+"로 전화 주세요.";
+  });
+})();
+</script>
+
+</body>
+</html>
