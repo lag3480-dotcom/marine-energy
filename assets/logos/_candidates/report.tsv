@@ -1,0 +1,47 @@
+shinsegae	ko:신세계백화점	files=7	logo-like=['Samsung wordmark.svg', 'Shinsegae logo.svg']
+shinsegae		shinsegae__0.png	Samsung wordmark.svg
+shinsegae		shinsegae__1.png	Shinsegae logo.svg
+shinsegae	en:Shinsegae	files=16	logo-like=['Commons-logo.svg', 'Shinsegae logo.svg']
+shinsegae		shinsegae__2.png	Commons-logo.svg
+shinsegae		shinsegae__3.png	Shinsegae logo.svg
+shinsegae	ko:신세계 (기업)	files=0	logo-like=[]
+lotte-dept	ko:롯데백화점	files=10	logo-like=[]
+lotte-dept	en:Lotte_Department_Store	files=4	logo-like=[]
+lotte-outlet	ko:롯데아울렛	files=10	logo-like=[]
+lotte-outlet	ko:롯데쇼핑	files=1	logo-like=['Lotte "Value Line" logo.svg']
+lotte-outlet		lotte-outlet__0.png	Lotte "Value Line" logo.svg
+lotte-outlet	en:Lotte_Shopping	files=7	logo-like=[]
+premium-outlet	ko:신세계사이먼	files=2	logo-like=['Shinsegae logo.svg']
+premium-outlet		premium-outlet__0.png	Shinsegae logo.svg
+premium-outlet	ko:신세계 프리미엄 아울렛	files=0	logo-like=[]
+premium-outlet	en:Shinsegae_Simon	files=0	logo-like=[]
+vips	ko:빕스	files=5	logo-like=['VIPS logo (2023).png']
+vips		vips__0.png	VIPS logo (2023).png
+vips	en:VIPS_(restaurant)	files=2	logo-like=['Wiktionary-logo-en-v2.svg']
+vips		vips__1.png	Wiktionary-logo-en-v2.svg
+bonjuk	ko:본죽	files=1	logo-like=[]
+bonjuk	ko:본아이에프	files=0	logo-like=[]
+bonjuk	en:Bonjuk	files=0	logo-like=[]
+shinhwa	ko:제주신화월드	files=3	logo-like=[]
+shinhwa	en:Jeju_Shinhwa_World	files=0	logo-like=[]
+shinhwa	ko:람정제주개발	files=1	logo-like=[]
+renault	ko:르노코리아	files=14	logo-like=['Commons-logo.svg', 'Samsung wordmark.svg']
+renault		renault__0.png	Commons-logo.svg
+renault		renault__1.png	Samsung wordmark.svg
+renault	en:Renault_Korea	files=39	logo-like=['2021 Renault Group logo.svg', 'Commons-logo.svg', 'Geely Logo 2022.svg', 'Renault Korea Motors symbol.svg', 'Renault Samsung Motors logo.svg', 'Symbol category class.svg', 'Symbol support vote.svg']
+renault		renault__2.png	2021 Renault Group logo.svg
+renault		renault__3.png	Commons-logo.svg
+renault		renault__4.png	Geely Logo 2022.svg
+renault		renault__5.png	Renault Korea Motors symbol.svg
+renault	en:Renault_Samsung_Motors	files=39	logo-like=['2021 Renault Group logo.svg', 'Commons-logo.svg', 'Geely Logo 2022.svg', 'Renault Korea Motors symbol.svg', 'Renault Samsung Motors logo.svg', 'Symbol category class.svg', 'Symbol support vote.svg']
+renault		renault__6.png	2021 Renault Group logo.svg
+renault		renault__7.png	Commons-logo.svg
+renault		renault__8.png	Geely Logo 2022.svg
+renault		renault__9.png	Renault Korea Motors symbol.svg
+hanwha-aero	ko:한화에어로스페이스	files=5	logo-like=['Hanwha Aerospace Logo.svg', 'Hanwha logo.svg']
+hanwha-aero		hanwha-aero__0.png	Hanwha Aerospace Logo.svg
+hanwha-aero		hanwha-aero__1.png	Hanwha logo.svg
+hanwha-aero	en:Hanwha_Aerospace	files=9	logo-like=['Commons-logo.svg', 'Hanwha Aerospace Logo.svg', 'Hanwha logo.svg']
+hanwha-aero		hanwha-aero__2.png	Commons-logo.svg
+hanwha-aero		hanwha-aero__3.png	Hanwha Aerospace Logo.svg
+hanwha-aero		hanwha-aero__4.png	Hanwha logo.svg
