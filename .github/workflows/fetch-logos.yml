@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [tools/logos.txt, tools/fetch_logos.py]
+    paths: [tools/logos.txt, tools/fetch_logos.py, tools/fetch_logos2.py]
 permissions:
   contents: write
 jobs:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 tools/fetch_logos.py
+      - run: python3 tools/fetch_logos2.py
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
