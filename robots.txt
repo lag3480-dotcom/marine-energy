@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lag3480-dotcom.github.io/marine-energy/sitemap.xml
