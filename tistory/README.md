@@ -22,3 +22,4 @@
 1. 2026-10-03-busan-restaurant-opening-gas.md
 2. 2026-10-04-busan-burner-add-checklist.md
 3. 2026-10-05-busan-gas-appliance-relocation.md
+4. 2026-10-06-busan-gas-completion-inspection.md
