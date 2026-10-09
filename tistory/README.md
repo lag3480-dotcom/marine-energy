@@ -25,3 +25,4 @@
 4. 2026-10-06-busan-gas-completion-inspection.md
 5. 2026-10-07-busan-city-gas-vs-lpg.md
 6. 2026-10-08-busan-kitchen-gas-capacity.md
+7. 2026-10-09-busan-gas-leak-alarm-shutoff.md
