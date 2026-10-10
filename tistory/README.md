@@ -26,3 +26,4 @@
 5. 2026-10-07-busan-city-gas-vs-lpg.md
 6. 2026-10-08-busan-kitchen-gas-capacity.md
 7. 2026-10-09-busan-gas-leak-alarm-shutoff.md
+8. 2026-10-10-busan-department-store-food-court-gas.md
