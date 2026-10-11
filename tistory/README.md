@@ -27,3 +27,4 @@
 6. 2026-10-08-busan-kitchen-gas-capacity.md
 7. 2026-10-09-busan-gas-leak-alarm-shutoff.md
 8. 2026-10-10-busan-department-store-food-court-gas.md
+9. 2026-10-11-food-court-gas-jeju-shinhwa.md
