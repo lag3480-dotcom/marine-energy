@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>마린에너지 전화 연결</title>
+<style>
+  :root { --bg:#0b3a7a; --fg:#fff; --btn:#ffd400; --btnfg:#111; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+         background:var(--bg); color:var(--fg); font-family:-apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; text-align:center; padding:16px; }
+  .box { max-width:420px; width:100%; }
+  h1 { font-size:22px; margin:0 0 6px; }
+  p { margin:0 0 22px; opacity:.85; font-size:15px; }
+  .num { font-size:34px; font-weight:700; letter-spacing:1px; margin:0 0 22px; }
+  a.call { display:block; background:var(--btn); color:var(--btnfg); text-decoration:none; font-size:22px; font-weight:700;
+           padding:18px; border-radius:14px; }
+  .sub { margin-top:18px; font-size:13px; opacity:.7; }
+</style>
+</head>
+<body>
+<div class="box">
+  <h1>마린에너지</h1>
+  <p>영업용 도시가스 공사 상담</p>
+  <div class="num">010-5364-6186</div>
+  <a class="call" id="call" href="tel:01053646186">📞 전화 걸기</a>
+  <div class="sub">전화 화면이 자동으로 뜨지 않으면 위 버튼을 눌러 주세요.</div>
+</div>
+<script>
+(function () {
+  var TEL = "tel:01053646186";
+  var URL_ = "https://jpbnklwyjsygvxguojpi.supabase.co/rest/v1/call_clicks";
+  var KEY = "sb_publishable_hcBBNBDQImgSRlezwbaMWg_-7I4Z9ZK";
+  var q = new URLSearchParams(location.search);
+  var src = (q.get("f") || "unknown").replace(/[^A-Za-z0-9_\-]/g, "").slice(0, 80) || "unknown";
+  var mobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+  var body = JSON.stringify({ src: src, device: mobile ? "mobile" : "pc", referrer: (document.referrer || "").slice(0, 300) || null });
+  function log(kind) {
+    try {
+      fetch(URL_, { method: "POST", keepalive: true,
+        headers: { "apikey": KEY, "Content-Type": "application/json", "Prefer": "return=minimal" },
+        body: kind ? body.replace('"src":"' + src + '"', '"src":"' + (src + "-" + kind).slice(0, 80) + '"') : body });
+    } catch (e) {}
+  }
+  log("");
+  document.getElementById("call").addEventListener("click", function () { log("btn"); });
+  if (mobile) setTimeout(function () { location.href = TEL; }, 250);
+})();
+</script>
+</body>
+</html>
