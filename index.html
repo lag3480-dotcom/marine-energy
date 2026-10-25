@@ -11,12 +11,11 @@
 <meta property="og:description" content="식당·업소 전용 가스시설 공사. 부산·경남.">
 <meta property="og:url" content="https://lag3480-dotcom.github.io/marine-energy/">
 <!-- NAVER_VERIFY: 네이버 서치어드바이저 소유확인 메타태그 자리 -->
-<!-- NAVER_WCS: 네이버 광고 공통 스크립트 자리 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
-/* Layout: 한 줄로 흐르는 노란 가스배관이 페이지를 관통하고, 각 섹션은 배관에 붙은 표지처럼 놓인다. 모바일 하단엔 전화·카톡 고정 바. */
+/* Layout: 한 줄로 흐르는 노란 가스배관이 페이지를 관통하고, 각 섹션은 배관에 붙은 표지처럼 놓인다. 모바일 하단엔 전화·문자 고정 바. */
 :root{
   --ink:#14202b;          /* 본문, 짙은 남색 */
   --steel:#4a5966;        /* 보조 텍스트 */
@@ -186,6 +185,25 @@ footer a{color:#d3dae0}
   .top-call{display:none}
 }
 </style>
+<!-- NAVER_WCS:START -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if (!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "s_594b2315d8e3";
+if (!_nasa) var _nasa = {};
+if (window.wcs) {
+  wcs.inflow("lag3480-dotcom.github.io");
+  wcs_do();
+}
+window.mrnConv = function (type) {
+  try { if (window.wcs) { var _conv = {}; _conv.type = type; wcs.trans(_conv); } } catch (e) {}
+};
+document.addEventListener("click", function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="tel:"],a[href^="sms:"]');
+  if (a) window.mrnConv(a.getAttribute("href").indexOf("tel:") === 0 ? "lead" : "custom001");
+}, true);
+</script>
+<!-- NAVER_WCS:END -->
 </head>
 <body>
 
@@ -432,14 +450,7 @@ footer a{color:#d3dae0}
 <script>
 (function(){
   var PHONE = "01053646186";
-  // 네이버 광고 전환 추적: 공통 스크립트가 붙으면 전화·카톡 클릭을 전환으로 보낸다.
-  function track(kind){
-    try{ if(window.wcs && window._nasa!==undefined){ window._nasa["cnv"]=wcs.cnv("4","1"); wcs_do(window._nasa); } }catch(e){}
-    try{ if(window.gtag){ gtag("event","contact",{method:kind}); } }catch(e){}
-  }
-  document.querySelectorAll("[data-track]").forEach(function(a){
-    a.addEventListener("click",function(){ track(a.getAttribute("data-track")); });
-  });
+  // 전화·문자 링크 클릭 전환은 head의 네이버 공통 스크립트(tools/naver_wcs.py)가 보낸다.
 
   var copyBtn=document.getElementById("copyBtn");
   copyBtn.addEventListener("click",function(){
@@ -456,7 +467,7 @@ footer a{color:#d3dae0}
     if(phone.replace(/\D/g,"").length<9){ msg.textContent="연락받으실 번호를 적어주세요."; form.elements.phone.focus(); return; }
     msg.textContent="";
     var body="[홈페이지 문의] "+v("type")+" / "+v("area")+"\n"+(v("name")?v("name")+"\n":"")+"연락처 "+phone+(v("memo")?"\n"+v("memo"):"");
-    track("form_sms");
+    if(window.mrnConv) window.mrnConv("custom001");
     var ios=/iPhone|iPad|iPod/.test(navigator.userAgent);
     location.href="sms:"+PHONE+(ios?"&":"?")+"body="+encodeURIComponent(body);
     msg.textContent="문자 앱이 열리지 않으면 "+PHONE+"로 전화 주세요.";

@@ -25,3 +25,4 @@ out = head + rest.split("<style>",1)[0] + "<style>" + rest.split("<style>",1)[1]
 (root/"index.html").write_text(out, encoding="utf-8")
 (root/"preview.html").write_text(page, encoding="utf-8")
 print("built", len(out))
+import sys; sys.path.insert(0, str(root/"tools")); import naver_wcs; naver_wcs.apply_all()

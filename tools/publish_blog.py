@@ -79,3 +79,4 @@ sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps
 (root/"sitemap.xml").write_text(sm, encoding="utf-8")
 (root/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}sitemap.xml\n", encoding="utf-8")
 print(f"published {len(posts)} posts")
+import sys; sys.path.insert(0, str(root/"tools")); import naver_wcs; naver_wcs.apply_all()
